@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppAdmin.Vistas.Login"
+              NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <Grid>
+            <Image Source="https://st3.depositphotos.com/3632179/36314/i/450/depositphotos_363142364-stock-photo-trend-dark-blue-background-leaves.jpg" 
+                   Aspect="AspectFill" Opacity="0.2"></Image>
+            <StackLayout>
+                <Image Source="https://png.pngtree.com/png-clipart/20240628/original/pngtree-round-illustration-with-foliage-and-plants-on-circular-background-vector-png-image_15430047.png" 
+                       Margin="0,250,0,30" WidthRequest="200" ></Image>
+                <Entry Placeholder="DNI" Margin="0,0,0,0" Keyboard="Numeric"></Entry>
+                <Button Text="Iniciar Sesión" BackgroundColor="#508c63" CornerRadius="10" 
+                        Margin="90,20,90,0" TextColor="White"></Button>
+                <Grid ColumnDefinitions="250,*">
+                    <Label Text="Eres nuevo en la aplicación" HorizontalOptions="End" TextColor="Black"></Label>
+                    <Label Text="Registrarse" Grid.Column="1" TextColor="#a64242">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                        </Label.GestureRecognizers>
+                    </Label>
+                </Grid>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
