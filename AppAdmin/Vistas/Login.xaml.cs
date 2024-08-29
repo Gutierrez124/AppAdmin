@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AppAdmin.ViewModel;
 
 
 using Xamarin.Forms;
@@ -16,6 +17,7 @@ namespace AppAdmin.Vistas
         public Login()
         {
             InitializeComponent();
+            BindingContext = new VMLogin(Navigation);
         }
 
         private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)

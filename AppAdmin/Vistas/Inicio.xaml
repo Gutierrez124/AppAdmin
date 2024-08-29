@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppAdmin.Vistas.Inicio"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <Grid>
+            <Image Source="https://st3.depositphotos.com/3632179/36314/i/450/depositphotos_363142364-stock-photo-trend-dark-blue-background-leaves.jpg" 
+       Aspect="AspectFill" Opacity="1"></Image>
+            <StackLayout>
+            <Frame BorderColor="White" Padding="7" CornerRadius="18" Margin="60,20,60,20" BackgroundColor="Transparent">
+                <Label TextColor="White" FontSize="16" HorizontalTextAlignment="Center"  Margin="0,0,0,0">Hola Gutierrez 🔎</Label>
+            </Frame>
+            <Image Source="https://cuidadodelmedioambiente.com/wp-content/uploads/2024/02/cropped-Imagens-4.png" HeightRequest="100"></Image>
+            <Frame Margin="10,20,10,30" CornerRadius="30">
+                <Grid RowDefinitions="*,*,*" ColumnDefinitions="*,*">
+                    <StackLayout>
+                        <Frame BackgroundColor="#b4f4fa" CornerRadius="10">
+                            <Grid RowDefinitions="80,*">
+                                <Image Source="https://cdn-icons-png.flaticon.com/512/8146/8146003.png" BackgroundColor="Transparent" >
+                                </Image>
+                                <Label  Text="Productos" TextColor="Black" Grid.Row="1"  FontAttributes="Bold" HorizontalOptions="Center"></Label>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Grid.Column="1">
+                        <Frame BackgroundColor="#b4f4fa" CornerRadius="10">
+                            <Grid RowDefinitions="80,*">
+                                <Image Source="https://cdn-icons-png.freepik.com/512/6012/6012388.png" >
+                                </Image>
+                                <Label Text="Clientes" Grid.Row="1" HorizontalOptions="Center" FontAttributes="Bold" ></Label>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Grid.Row="1">
+                        <Frame BackgroundColor="#b4f4fa" CornerRadius="10">
+                            <Grid RowDefinitions="80,*">
+                                <Image Source="https://cdn-icons-png.flaticon.com/512/244/244570.png" >
+                                </Image>
+                                <Label Text="Ventas" Grid.Row="1" HorizontalOptions="Center" FontAttributes="Bold" ></Label>
+
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Grid.Row="1" Grid.Column="1">
+                        <Frame BackgroundColor="#b4f4fa" CornerRadius="10">
+                            <Grid RowDefinitions="80,*">
+                                <Image Source="https://cdn-icons-png.flaticon.com/512/6784/6784466.png" >
+                                </Image>
+                                <Label Text="Reportes" Grid.Row="1" HorizontalOptions="Center" FontAttributes="Bold" ></Label>
+
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Grid.Row="2">
+                        <Frame BackgroundColor="#b4f4fa" CornerRadius="10">
+                            <Grid RowDefinitions="80,*">
+                                <Image Source="https://cdn-icons-png.flaticon.com/512/4564/4564998.png" >
+                                </Image>
+                                <Label Text="Pagos" Grid.Row="1" HorizontalOptions="Center" FontAttributes="Bold"></Label>
+
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+                    <StackLayout Grid.Row="2" Grid.Column="1">
+                        <Frame BackgroundColor="#b4f4fa" CornerRadius="10">
+                            <Grid RowDefinitions="80,*">
+                                <Image Source="https://cdn-icons-png.flaticon.com/512/6671/6671938.png" >
+                                </Image>
+                                <Label Text="Configuracion" Grid.Row="1" HorizontalOptions="Center" FontAttributes="Bold" ></Label>
+                            </Grid>
+                        </Frame>
+                    </StackLayout>
+                </Grid>
+            </Frame>
+        </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

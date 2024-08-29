@@ -10,9 +10,9 @@
             <StackLayout>
                 <Image Source="https://png.pngtree.com/png-clipart/20240628/original/pngtree-round-illustration-with-foliage-and-plants-on-circular-background-vector-png-image_15430047.png" 
                        Margin="0,250,0,30" WidthRequest="200" ></Image>
-                <Entry Placeholder="DNI" Margin="0,0,0,0" Keyboard="Numeric"></Entry>
+                <Entry Placeholder="DNI" Margin="0,0,0,0" Keyboard="Numeric" MaxLength="8" Text="{Binding txtDni}"></Entry>
                 <Button Text="Iniciar Sesión" BackgroundColor="#508c63" CornerRadius="10" 
-                        Margin="90,20,90,0" TextColor="White"></Button>
+                        Margin="90,20,90,0" TextColor="White" Command="{Binding ComandoIniciar}"></Button>
                 <Grid ColumnDefinitions="250,*">
                     <Label Text="Eres nuevo en la aplicación" HorizontalOptions="End" TextColor="Black"></Label>
                     <Label Text="Registrarse" Grid.Column="1" TextColor="#a64242">

@@ -5,6 +5,7 @@ using AppAdmin.Models;
 using AppAdmin.Conexiones;
 using Firebase.Database.Query;
 using System.Threading.Tasks;
+using System.Linq;
 
 namespace AppAdmin.Datos
 {
@@ -22,6 +23,21 @@ namespace AppAdmin.Datos
                     Telefono = musuarios.Telefono,
                 });
             return true;
+        }
+        public async Task<List<MUsuarios>> ValidarLogin(MUsuarios mUsuarios)
+        {
+            return (await Conexion.clienteFirebase.
+                Child("Usuarios").OnceAsync<MUsuarios>())
+                .Where(a => a.Object.Dni == mUsuarios.Dni)
+                .Select(item => new MUsuarios
+                {
+                    Dni = item.Object.Dni,
+                    Apellidos = item.Object.Apellidos,
+                    Nombres = item.Object.Nombres,
+                    Direccion = item.Object.Direccion,
+                    Telefono = item.Object.Telefono
+                }
+                ).ToList();
         }
     }
 }
